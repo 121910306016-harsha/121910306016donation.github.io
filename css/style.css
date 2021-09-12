@@ -11,7 +11,7 @@ section{
   width: 100%;
   min-height: 100vh;
   background:  linear-gradient(rgba(0, 0, 0, 0.9),
-  rgba(0, 0, 0, 0.1)), url(p1.jpg);
+  rgba(0, 0, 0, 0.1)), url('p1.jpg');
   background-size: cover;
   background-position:center;
   display:flex;
@@ -114,7 +114,7 @@ header .navigation li a:hover{
   width: 100%;
   min-height: 100vh;
   background:  linear-gradient(rgba(0, 0, 0, 0.9),
-  rgba(0, 0, 0, 0.1)), url(p2.jpg);
+  rgba(0, 0, 0, 0.1)), url('p2.jpg');
   background-size: cover;
   background-position:center;
   display:flex;
