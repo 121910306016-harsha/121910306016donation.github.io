@@ -11,7 +11,7 @@ section{
   width: 100%;
   min-height: 100vh;
   background:  linear-gradient(rgba(0, 0, 0, 0.9),
-  rgba(0, 0, 0, 0.1)), url('../images/p1.jpg');
+  rgba(0, 0, 0, 0.1)), url(../images/p1.jpg);
   background-size: cover;
   background-position:center;
   display:flex;
@@ -103,10 +103,67 @@ header .navigation li a:hover{
     justify-content: space-between;
     align-items: center;
 }
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(../images/p2.jpg);
+  background-size: cover;
+  display: flex;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px;
+}
+.content .contentBx h2 {
+  font-size: 2em;
+  color: #fff;
+  line-height: 1em;
+}
+.content .contentBx p {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300px;
+  margin: 20px 0;
+}
+header .navigation.active {
+    display: flex;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    margin-top:10px;
+    
+    /* background: #000; */
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+    
+   }
+   header .navigation {
+    position: relative;
+    display: flex;
+    display: none;
+   }
+  
+.toggleMenu{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: url(../images/menu1.png);
+  background-color: white;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  filter: invert(1);
+  transform: scale(0.9);
+  margin-right: 15px;
+
+}
 .container-el {
   width: 40%;
 }
 }
+/* Gallery css */
 /* about */
 .about{
   color: white;
@@ -114,7 +171,7 @@ header .navigation li a:hover{
   width: 100%;
   min-height: 100vh;
   background:  linear-gradient(rgba(0, 0, 0, 0.9),
-  rgba(0, 0, 0, 0.1)), url('../images/p2.jpg');
+  rgba(0, 0, 0, 0.1)), url(../images/p2.jpg);
   background-size: cover;
   background-position:center;
   display:flex;
@@ -232,11 +289,4 @@ input[type=text], select,textarea {
   }
   footer a{
       color: black;
-  }
-  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-  @media screen and (max-width: 500px) {
-header.navigation{
-      float: none;
-      display: block;
-    }
   }
